@@ -1,0 +1,43 @@
+body {
+	font-size: 10em;
+	padding: 0;
+	margin: 0;
+}
+
+div {
+	border: 3px solid black;
+	float: left;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	text-align: center;
+	user-select: none;
+}
+
+#left, #right {
+	width: 25%;
+	height: 100%;
+	top: 0;
+}
+
+#top, #bottom {
+	width: 50%;
+	height: 50%;
+	left: 25%;
+}
+
+#left {
+	left: -3px;
+}
+
+#right {
+	right: -3px;
+}
+
+#top {
+	top: -3px;
+}
+
+#bottom {
+	bottom: -3px;
+}
