@@ -9,10 +9,10 @@
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-	<div id="left" onclick="send('left')">&#8656;</div>
-	<div id="top" onclick="send('top')">&#8657;</div>
-	<div id="right" onclick="send('right')">&#8658;</div>
-	<div id="bottom" onclick="send('bottom')">&#8659;</div>
+	<div id="left" onclick="send('left')" onmousedown="buttonAnimation(this)" onmouseup="resetAnimation(this)"><span>&#8656;</span></span></div>
+	<div id="top" onclick="send('top')" onmousedown="buttonAnimation(this)" onmouseup="resetAnimation(this)"><span>&#8657;</span></div>
+	<div id="right" onclick="send('right')" onmousedown="buttonAnimation(this)" onmouseup="resetAnimation(this)"><span>&#8658;</span></div>
+	<div id="bottom" onclick="send('bottom')" onmousedown="buttonAnimation(this)" onmouseup="resetAnimation(this)"><span>&#8659;</span></div>
   <script src="js/app.js"></script>
 </body>
 </html>
