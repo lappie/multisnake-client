@@ -16,3 +16,25 @@ function buttonAnimation(el) {
 function resetAnimation(el) {
 	el.style.backgroundColor = "white";
 }
+
+var body = document.getElementById("app");
+body.onkeydown = function(e) {
+    e = e || window.event;
+		if(['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].indexOf(e.code) >= 0) {
+			let msg = e.code.substring(5).toLowerCase();
+			send(msg);
+
+			//Do animation:
+			el = document.getElementById(msg);
+			buttonAnimation(el);
+		}
+};
+
+body.onkeyup = function(e) {
+	e = e || window.event;
+	if(['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].indexOf(e.code) >= 0) {
+		let msg = e.code.substring(5).toLowerCase();
+		el = document.getElementById(msg);
+		resetAnimation(el);
+	}
+}

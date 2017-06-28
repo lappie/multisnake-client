@@ -26,7 +26,7 @@ span {
 	top: 0;
 }
 
-#top, #bottom {
+#up, #down {
 	width: calc(50% - 6px);
 	height: 50%;
 	left: 25%;
@@ -40,10 +40,10 @@ span {
 	right: 0px;
 }
 
-#top {
+#up {
 	top: 0px;
 }
 
-#bottom {
+#down {
 	bottom: 0px;
 }
