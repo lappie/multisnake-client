@@ -4,6 +4,7 @@ let websocket = new WebSocket(wsUri);
 let userid = 1;
 
 websocket.onmessage = function(evt) { console.log('MESSAGE: ' + evt.data) };
+websocket.onclose = function(evt) { document.getElementById('closed').style.display = 'block'};
 
 function send(msg) {
 	websocket.send(userid + "/" + msg);
