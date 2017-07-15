@@ -1,4 +1,4 @@
-let wsUri = "ws://localhost:9000";
+let wsUri = "ws://localhost:9001";
 let websocket = new WebSocket(wsUri);
 
 let userid = 1;
