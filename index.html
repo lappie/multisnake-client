@@ -10,6 +10,10 @@
 </head>
 <body id="app">
 	<div class="error" id="closed">Connection lost</div>
+  <div class="register" id="register-screen">
+    <input type="text" name="name" id="player-name" placeholder="Player name">
+    <input type="button" onclick="register()" value="Play!">
+  </div>
 
 	<div class="button" id="left" onclick="send('left')" onmousedown="buttonAnimation(this)" onmouseup="resetAnimation(this)"><span>&#8656;</span></span></div>
 	<div class="button" id="up" onclick="send('up')" onmousedown="buttonAnimation(this)" onmouseup="resetAnimation(this)"><span>&#8657;</span></div>
